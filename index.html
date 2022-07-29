@@ -6,11 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tech Learning Website</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/c74965c5dc.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="mx-5">
+<!-- header section -->
+<body>
   <header class="container">
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container">
@@ -48,12 +50,34 @@
         </div>
       </div>
     </nav>
+
     <section>
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class=" text-white d-flex flex-column justify-content-center align-items-center"
-              style="background-image: url(images/cover/cover-1.png); height:100vh;">
+            <div class="background-image" style="background-image:url(images/cover/cover-1.png);">
+            <div class="color-overlay d-flex flex-column justify-content-center align-items-center ">
+              <div class="text-center ">
+                <h1 class="fw-bold">Get Started Digital <br>
+                  Learning</h1>
+              </div>
+              <div class="text-center">
+                <p>It is a long established fact that a reader will be distracted by the readable
+                  content <br>of a page when looking at its layout</p>
+              </div>
+              <div><button type="button" class=" text-white btn btn-info">Get Started</button></div>
+
+            </div>
+
+            </div>
+
+
+
+
+
+
+            <!-- <div class="col-md-12 col-sm-4 col-md-12 text-white d-flex flex-column justify-content-center align-items-center"
+            style="background-image: url(images/cover/cover-1.png); height:100vh;">
               <div class="text-center">
                 <h1 class="fw-bold">Get Started Digital <br>
                   Learning</h1>
@@ -63,10 +87,26 @@
                   content <br>of a page when looking at its layout</p>
               </div>
               <div><button type="button" class=" text-white btn btn-info">Get Started</button></div>
-            </div>
+            </div> -->
           </div>
           <div class="carousel-item">
-            <div class=" text-white d-flex flex-column justify-content-center align-items-center"
+
+            <div class="background-image" style="background-image:url(images/cover/cover-2.jpg);">
+              <div class="color-overlay d-flex flex-column justify-content-center align-items-center ">
+                <div class="text-center ">
+                  <h1 class="fw-bold">Get Started Digital <br>
+                    Learning</h1>
+                </div>
+                <div class="text-center">
+                  <p>It is a long established fact that a reader will be distracted by the readable
+                    content <br>of a page when looking at its layout</p>
+                </div>
+                <div><button type="button" class=" text-white btn btn-info">Get Started</button></div>
+  
+              </div>
+  
+              </div>
+            <!-- <div class=" text-white d-flex flex-column justify-content-center align-items-center"
               style="background-image: url(images/cover/cover-2.jpg); height:100vh;">
               <div class="text-center">
                 <h1 class="fw-bold">Get Started Digital <br>
@@ -77,10 +117,25 @@
                   content <br>of a page when looking at its layout</p>
               </div>
               <div><button type="button" class=" text-white btn btn-info">Get Started</button></div>
-            </div>
+            </div> -->
           </div>
-          <div class="carousel-item">
-            <div class=" text-white d-flex flex-column justify-content-center align-items-center"
+          <div class="carousel-item"> 
+            <div class="background-image" style="background-image:url(images/cover/cover-3.jpg);">
+              <div class="color-overlay d-flex flex-column justify-content-center align-items-center ">
+                <div class="text-center ">
+                  <h1 class="fw-bold">Get Started Digital <br>
+                    Learning</h1>
+                </div>
+                <div class="text-center">
+                  <p>It is a long established fact that a reader will be distracted by the readable
+                    content <br>of a page when looking at its layout</p>
+                </div>
+                <div><button type="button" class=" text-white btn btn-info">Get Started</button></div>
+  
+              </div>
+  
+              </div>
+            <!-- <div class=" text-white d-flex flex-column justify-content-center align-items-center"
               style="background-image: url(images/cover/cover-3.jpg); height:100vh;">
               <div class="text-center">
                 <h1 class="fw-bold">Get Started Digital <br>
@@ -91,7 +146,7 @@
                   content <br>of a page when looking at its layout</p>
               </div>
               <div><button type="button" class=" text-white btn btn-info">Get Started</button></div>
-            </div>
+            </div> -->
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -108,6 +163,7 @@
     </section>
   </header>
 
+<!-- course secrion -->
   <main>
     <section class="container">
       <div class="text-center mt-5 pt-5">
@@ -118,7 +174,7 @@
 
       <div class="row g-3 mt-5 mb-5">
         <div class="col-lg-6">
-          <div class="d-flex border rounded">
+          <div class=" col-sm-12 d-flex border rounded">
             <div>
               <img src="images/course/course-1.png" class="img-fluid" style="height:150px; width:300px" alt="...">
             </div>
@@ -129,71 +185,71 @@
               <h6 class="text-info">price : 20$</h6>
             </div>
           </div>
-
         </div>
-        <div class="col-lg-6">
+
+        <div class="col-12 flex-row-reverse col-sm-12 col-lg-6">
           <div class="d-flex border rounded">
             <div>
               <img src="images/course/course-2.png" class="img-fluid" style="height:150px; width:300px" alt="...">
             </div>
             <div class="p-3">
-              <h5 class="card-title">Fundamental Of UI/UX Design</h5>
+              <h5 class="card-title">Fundamental Of Graphic Design</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card.
               </p>
               <h6 class="text-info">price : 20$</h6>
             </div>
           </div>
-
         </div>
+
         <div class="col-lg-6">
           <div class="d-flex border rounded">
             <div>
               <img src="images/course/course-3.png" class="img-fluid" style="height:150px; width:300px" alt="...">
             </div>
             <div class="p-3">
-              <h5 class="card-title">Fundamental Of UI/UX Design</h5>
+              <h5 class="card-title">Fundamental Of Website Design</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card.
               </p>
               <h6 class="text-info">price : 20$</h6>
             </div>
           </div>
-
         </div>
+
         <div class="col-lg-6">
           <div class="d-flex border rounded">
             <div>
               <img src="images/course/course-4.png" class="img-fluid" style="height:150px; width:300px" alt="...">
             </div>
             <div class="p-3">
-              <h5 class="card-title">Fundamental Of UI/UX Design</h5>
+              <h5 class="card-title">Fundamental Of Motion Design</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card.
               </p>
               <h6 class="text-info">price : 20$</h6>
             </div>
           </div>
-
         </div>
+
         <div class="col-lg-6">
-          <div class="d-flex border rounded">
-            <div>
-              <img src="images/course/course-5.png" class="img-fluid" style="height:150px; width:300px" alt="...">
-            </div>
-            <div class="p-3">
-              <h5 class="card-title">Fundamental Of UI/UX Design</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card.
-              </p>
-              <h6 class="text-info">price : 20$</h6>
+            <div class="d-flex border rounded">
+              <div>
+                <img src="images/course/course-5.png" class="img-fluid" style="height:150px; width:300px" alt="...">
+              </div>
+              <div class="p-3">
+                <h5 class="card-title">Fundamental Of Animation Design</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card.
+                </p>
+                <h6 class="text-info">price : 20$</h6>
+              </div>
             </div>
           </div>
 
-        </div>
-        <div class="col-lg-6">
+      <div class="col-lg-6">
           <div class="d-flex border rounded">
             <div>
               <img src="images/course/course-6.png" class="img-fluid" style="height:150px; width:300px" alt="...">
             </div>
             <div class="p-3">
-              <h5 class="card-title">Fundamental Of UI/UX Design</h5>
+              <h5 class="card-title">Fundamental Of Vedio editing & Design</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card.
               </p>
               <h6 class="text-info">price : 20$</h6>
@@ -201,15 +257,12 @@
           </div>
         </div>
       </div>
-      <div class="d-flex justify-content-center"><button type="button" class=" text-white btn btn-info">see more
+      <div class="d-flex justify-content-center"><button type="button"class=" text-white btn btn-info">see more
           courses</button></div>
     </section>
   </main>
 
-
-
-
-
+<!-- explor institute -->
   <section class="container my-5 py-5">
     <div class="row bg-light">
       <div class="col-lg-6">
@@ -245,7 +298,7 @@
     </div>
   </section>
 
-
+<!-- student section -->
 <section class="container">
   <div class="pb-4">
     <h2 class="fw-bold">Meet Our Successfull <br> Student</h2>
@@ -300,11 +353,11 @@
     <div class="d-flex justify-content-center pt-5"><button type="button" class=" text-white btn btn-info">View All</button></div>
 </section>
 
-
+<!-- registarion section -->
   <section class="container mt-5">
-    <div class="d-flex justify-content-between justify-content-center align-items-center bg-primary rounded"
-      style="height:200px ;">
-      <div class="d-flex flex-column p-5">
+    <div class="col-12 col-sm-12 d-flex justify-content-between justify-content-center align-items-center bg-primary rounded"
+      style="height:50vh;">
+      <div class="d-flex flex-column ps-3">
         <div>
           <h2>Ready to join?</h2>
         </div>
@@ -321,14 +374,15 @@
     </div>
   </section>
 
+<!-- Questions section -->
   <section class="container mx-5 pb-4">
-    <div class="py-4 mt-5 d-flex flex-column justify-content-center">
+    <div class=" coi-12 p-5 mt-5 d-flex flex-column justify-content-center">
       <h2 class="text-center fw-bold">Frequently Asked Questions</h2>
-      <p class="text-center">It is a long established fact that a reader will be distracted by the readable <br> content
+      <p class="text-center">It is a long established fact that a reader will be distracted by the readable content <br>
         of a page when looking at its layout</p>
     </div>
-    <div class="d-flex flex-column justify-content-center mx-5 px-5">
-      <div class="accordion" id="accordionExample">
+    <div class="d-flex flex-column justify-content-center mx-4 px-4">
+      <div class="col-12 col-sm-12 accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse"
@@ -397,18 +451,20 @@
       </div>
     </div>
   </section>
-
+ <!-- trusted company section -->
   <section class="container">
-    <div>
-      <h2 class="text-center fw-bold mt-5">Trusted by over 800+ companies</h2>
-    </div>
-    <div class="d-flex justify-content-evenly mt-4 mb-5">
-      <img style="height:20px ;" src="images/company/company-1.png" alt="">
-      <img style="height:30px ;" src="images/company/company-2.png" alt="">
-      <img style="height:20px ;" src="images/company/company-3.png" alt="">
-      <img style="height:20px ;" src="images/company/company-4.png" alt="">
-      <img style="height:30px ;" src="images/company/company-5.png" alt="">
-      <img style="height:30px ;" src="images/company/company-6.png" alt="">
+    <div class="d-none d-sm-block d-sm-none d-md-block">
+      <div>
+        <h2 class="text-center fw-bold mt-5">Trusted by over 800+ companies</h2>
+      </div>
+      <div class="d-flex justify-content-evenly mt-4 mb-5">
+        <img style="height:20px ;" src="images/company/company-1.png" alt="">
+        <img style="height:30px ;" src="images/company/company-2.png" alt="">
+        <img style="height:20px ;" src="images/company/company-3.png" alt="">
+        <img style="height:20px ;" src="images/company/company-4.png" alt="">
+        <img style="height:30px ;" src="images/company/company-5.png" alt="">
+        <img style="height:30px ;" src="images/company/company-6.png" alt="">
+      </div>
     </div>
   </section>
 
